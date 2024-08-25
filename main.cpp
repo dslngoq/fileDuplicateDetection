@@ -35,9 +35,9 @@ int main(int argc, char* argv[]) {
         if (result.count(md5) > 0) {
             result[md5].push_back(file.string());
         } else {
-            std::vector<std::string> ls;
-            ls.emplace_back(file.string());
-            result.insert({md5, ls});
+            std::vector<std::string> x;
+            x.emplace_back(file.string());
+            result.insert({md5, x});
         }
     }
 
